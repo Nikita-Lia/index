@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lili | Massagem Relaxante e Tradicional</title>
+
+<meta name="description" content="Lili — massagem relaxante e tradicional com atendimento reservado e pontual. Hotéis, motéis e local próprio. Agende pelo WhatsApp.">
+<meta name="author" content="Lili">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#a83e5f">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Lili">
+<meta property="og:title" content="Lili | Massagem Relaxante e Tradicional">
+<meta property="og:description" content="Massagem relaxante e tradicional. Atendimento reservado, pontual e com hora marcada.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1544005312-30d6d769276a?q=80&w=800&auto=format&fit=crop"> 
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "HealthAndBeautyBusiness",
+ "name": "Lili — Massagem Relaxante e Tradicional",
+ "description": "Massagem relaxante e tradicional com atendimento reservado. Atende em hotéis, motéis e local próprio.",
+ "telephone": "+5518998146332",
+ "priceRange": "R$ 300",
+ "areaServed": "Brasil",
+ "availableLanguage": "pt-BR",
+ "makesOffer": [
+ { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Massagem relaxante" } },
+ { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Massagem tradicional" } }
+ ]
+}
+</script>
+
+<style>
+/* ══════════════════════════════════════════════════════════════════
+ 1. TOKENS
+ ══════════════════════════════════════════════════════════════════ */
+:root{
+ --bg:#fcf8f8;
+ --bg-alt:#f7edef;
+ --card:#ffffff;
+ --ink:#241a1c;
+ --ink-soft:#4b3a3d;
+ --muted:#7f676a;
+ --accent:#a83e5f;
+ --accent-dark:#882f4b;
+ --accent-soft:#f8e4ea;
+ --gold:#b8945f;
+ --wa:#1faa55;
+ --wa-dark:#178f46;
+ --border:#efe1e4;
+ --border-strong:#e6d2d7;
+
+ --shadow-xs:0 1px 3px rgba(90,45,60,.05);
+ --shadow-sm:0 4px 16px -6px rgba(110,45,65,.14);
+ --shadow:0 18px 44px -18px rgba(110,45,65,.30);
+ --shadow-lg:0 34px 80px -28px rgba(90,30,50,.40);
+
+ --r-sm:12px;
+ --r:18px;
+ --r-lg:26px;
+ --max:1120px;
+
+ --ease:cubic-bezier(.22,.68,.35,1);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+ 2. RESET / BASE
+ ══════════════════════════════════════════════════════════════════ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+ font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+ font-weight:400;
+ background:var(--bg);
+ color:var(--ink);
+ line-height:1.7;
+ font-size:16px;
+ -webkit-font-smoothing:antialiased;
+ overflow-x:hidden;
+ position: relative;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--accent-soft);color:var(--accent-dark)}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:3px;border-radius:8px}
+
+/* ══════════════════════════════════════════════════════════════════
+ 3. LAYOUT
+ ══════════════════════════════════════════════════════════════════ */
+.container{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:24px}
+section{padding-block:84px;scroll-margin-top:84px;position:relative}
+.section-alt{background:linear-gradient(180deg,#fff 0%,var(--bg-alt) 100%)}
+.sec-head{max-width:660px;margin-bottom:44px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.eyebrow::before{content:'';width:26px;height:1.5px;background:var(--accent);opacity:.55}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.15;letter-spacing:.01em}
+h2{font-size:clamp(1.9rem,4.2vw,2.85rem);color:var(--ink)}
+.sec-head p{margin-top:14px;color:var(--muted);font-size:1rem;max-width:56ch}
+
+/* ══════════════════════════════════════════════════════════════════
+ 4. BOTÕES
+ ══════════════════════════════════════════════════════════════════ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;border-radius:100px;font-size:.95rem;font-weight:500;letter-spacing:.01em;white-space:nowrap;cursor:pointer;transition:transform .25s var(--ease),background .25s var(--ease),box-shadow .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease);will-change:transform}
+.btn svg{width:19px;height:19px;fill:currentColor;flex:none}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn-primary{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);color:#fff;box-shadow:0 10px 26px -10px rgba(168,62,95,.75)}
+.btn-primary:hover{box-shadow:0 16px 34px -12px rgba(168,62,95,.85)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 26px -12px rgba(31,170,85,.85)}
+.btn-wa:hover{background:var(--wa-dark)}
+.btn-ghost{background:transparent;color:var(--accent-dark);border:1.5px solid var(--border-strong)}
+.btn-ghost:hover{border-color:var(--accent);background:var(--accent-soft)}
+.btn-sm{padding:10px 20px;font-size:.87rem}
+
+/* ══════════════════════════════════════════════════════════════════
+ 5. TOPBAR
+ ══════════════════════════════════════════════════════════════════ */
+.topbar{position:sticky;top:0;z-index:60;background:rgba(252,248,248,.82);-webkit-backdrop-filter:blur(16px) saturate(180%);backdrop-filter:blur(16px) saturate(180%);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s,background .3s}
+.topbar.stuck{border-bottom-color:var(--border);box-shadow:0 1px 24px -12px rgba(90,40,60,.35)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px}
+.brand{font-family:'Cormorant Garamond',serif;font-size:1.85rem;font-weight:600;letter-spacing:.06em;color:var(--ink);line-height:1;position:relative;transition:color .25s}
+.brand:hover{color:var(--accent)}
+.brand::after{content:'';position:absolute;left:0;bottom:-4px;height:1.5px;width:0;background:var(--accent);transition:width .35s var(--ease)}
+.brand:hover::after{width:100%}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{position:relative;padding:8px 12px;border-radius:9px;font-size:.875rem;font-weight:400;color:var(--muted);transition:color .2s,background .2s}
+.nav a:hover{color:var(--accent);background:var(--accent-soft)}
+.bar-actions{display:flex;align-items:center;gap:10px}
+.menu-btn{display:none;width:42px;height:42px;border-radius:12px;align-items:center;justify-content:center;border:1.5px solid var(--border-strong);transition:border-color .2s,background .2s}
+.menu-btn:hover{border-color:var(--accent);background:var(--accent-soft)}
+.menu-btn span{display:block;width:18px;height:1.6px;background:var(--ink);border-radius:2px;position:relative;transition:transform .3s var(--ease),background .2s}
+.menu-btn span::before,.menu-btn span::after{content:'';position:absolute;left:0;width:18px;height:1.6px;background:inherit;border-radius:2px;transition:transform .3s var(--ease),top .3s var(--ease),opacity .2s}
+.menu-btn span::before{top:-6px}
+.menu-btn span::after{top:6px}
+.menu-btn[aria-expanded="true"] span{background:transparent}
+.menu-btn[aria-expanded="true"] span::before{top:0;transform:rotate(45deg);background:var(--ink)}
+.menu-btn[aria-expanded="true"] span::after{top:0;transform:rotate(-45deg);background:var(--ink)}
+
+/* ══════════════════════════════════════════════════════════════════
+ 6. HERO
+ ══════════════════════════════════════════════════════════════════ */
+.hero{padding-block:clamp(48px,7vw,88px) clamp(56px,7vw,90px);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;z-index:-1;width:640px;height:640px;border-radius:50%;top:-280px;right:-220px;background:radial-gradient(circle,rgba(168,62,95,.10) 0%,rgba(168,62,95,0) 68%)}
+.hero::after{content:'';position:absolute;z-index:-1;width:520px;height:520px;border-radius:50%;bottom:-260px;left:-200px;background:radial-gradient(circle,rgba(184,148,95,.10) 0%,rgba(184,148,95,0) 70%)}
+.hero .container{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(36px,5vw,68px);align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:9px;padding:7px 15px 7px 11px;border-radius:100px;background:#fff;border:1px solid var(--border);font-size:.79rem;font-weight:500;color:var(--ink-soft);box-shadow:var(--shadow-xs);margin-bottom:26px}
+.hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 3px rgba(31,170,85,.18);animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 3px rgba(31,170,85,.18)}50%{box-shadow:0 0 0 6px rgba(31,170,85,.05)}}
+.hero h1{font-size:clamp(3.6rem,10vw,6.4rem);font-weight:400;line-height:.92;letter-spacing:-.01em;margin-bottom:22px;color:var(--ink)}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero .lead{font-size:clamp(1rem,2vw,1.1rem);color:var(--muted);max-width:44ch;line-height:1.75;margin-bottom:34px;font-weight:300}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:30px;border-top:1px solid var(--border)}
+.chip{display:inline-flex;align-items:center;padding:7px 16px;border-radius:100px;font-size:.82rem;font-weight:500;background:var(--accent-soft);color:var(--accent-dark);border:1px solid transparent}
+.chip-plain{background:#fff;border-color:var(--border);color:var(--ink-soft)}
+
+/* Foto de destaque */
+.hero-photo{position:relative;isolation:isolate}
+.hero-photo::before{content:'';position:absolute;inset:22px -20px -20px 22px;border:1.5px solid var(--border-strong);border-radius:var(--r-lg);z-index:-1;transition:inset .5s var(--ease)}
+.hero-photo:hover::before{inset:16px -26px -26px 16px}
+.hero-photo .frame{position:relative;border-radius:var(--r-lg);overflow:hidden;background:linear-gradient(150deg,#f4e5e9,#efd9df);box-shadow:var(--shadow);aspect-ratio:4/5}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 42%;transition:transform 1.1s var(--ease)}
+.hero-photo:hover img{transform:scale(1.035)}
+.hero-photo .fallback{position:absolute;inset:0;display:none;place-items:center;font-family:'Cormorant Garamond',serif;font-size:5rem;color:var(--accent);opacity:.35}
+.hero-photo.empty img{display:none}
+.hero-photo.empty .fallback{display:grid}
+.photo-tag{position:absolute;left:16px;bottom:16px;z-index:2;display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:100px;background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);font-size:.78rem;font-weight:500;color:var(--ink);box-shadow:var(--shadow-sm)}
+.photo-tag svg{width:14px;height:14px;fill:var(--accent)}
+
+/* ══════════════════════════════════════════════════════════════════
+ 7. GALERIA
+ ══════════════════════════════════════════════════════════════════ */
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.gallery figure{margin:0;position:relative}
+.gallery button{display:block;width:100%;position:relative;border-radius:var(--r);overflow:hidden;background:linear-gradient(150deg,#f4e5e9,#efd9df);box-shadow:var(--shadow-sm);cursor:zoom-in;transition:box-shadow .35s var(--ease),transform .35s var(--ease)}
+.gallery button:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.gallery button::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(36,26,28,.35),transparent 55%);opacity:0;transition:opacity .35s var(--ease)}
+.gallery button:hover::after{opacity:1}
+.gallery img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .7s var(--ease)}
+.gallery button:hover img{transform:scale(1.06)}
+.zoom-hint{position:absolute;z-index:2;top:12px;right:12px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);opacity:0;transform:scale(.8);transition:opacity .3s var(--ease),transform .3s var(--ease)}
+.gallery button:hover .zoom-hint{opacity:1;transform:scale(1)}
+.zoom-hint svg{width:16px;height:16px;fill:var(--ink)}
+.gallery-empty{grid-column:1/-1;text-align:center;padding:56px 24px;border:1.5px dashed var(--border-strong);border-radius:var(--r);color:var(--muted);font-size:.93rem;background:#fff}
+/* ══════════════════════════════════════════════════════════════════
+ 8. CARDS DE INFORMAÇÃO
+ ══════════════════════════════════════════════════════════════════ */
+.info-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.info-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:22px 24px;box-shadow:var(--shadow-xs);transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s var(--ease);position:relative;overflow:hidden}
+.info-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--accent),var(--gold));opacity:0;transition:opacity .3s var(--ease)}
+.info-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm);border-color:var(--border-strong)}
+.info-card:hover::before{opacity:1}
+.info-card .label{font-size:.71rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.info-card .value{font-size:1rem;font-weight:500;color:var(--ink);line-height:1.45}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.service{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:36px 32px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.service::after{content:'';position:absolute;inset:auto -60px -60px auto;width:170px;height:170px;border-radius:50%;background:radial-gradient(circle,rgba(168,62,95,.10),transparent 70%);transition:transform .6s var(--ease)}
+.service:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.service:hover::after{transform:scale(1.35)}
+.service .num{font-family:'Cormorant Garamond',serif;font-size:.9rem;font-weight:600;letter-spacing:.14em;color:var(--gold);margin-bottom:14px;display:block}
+.service h3{font-size:1.6rem;font-weight:600;margin-bottom:10px;color:var(--ink)}
+.service p{color:var(--muted);font-size:.95rem;line-height:1.7;position:relative;z-index:1}
+
+/* ══════════════════════════════════════════════════════════════════
+ 9. PAGAMENTO
+ ══════════════════════════════════════════════════════════════════ */
+.panel{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:clamp(26px,4vw,42px);box-shadow:var(--shadow-sm)}
+.payment-box{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,48px)}
+.payment-box h3{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:600;margin-bottom:14px;color:var(--ink)}
+.methods{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.pix-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0 16px}
+.pix-key{background:var(--bg-alt);color:var(--accent-dark);padding:13px 22px;border-radius:var(--r-sm);font-size:1.18rem;font-weight:600;letter-spacing:.06em;border:1px dashed var(--border-strong);font-variant-numeric:tabular-nums}
+.copy{background:var(--accent);color:#fff;padding:13px 22px;border-radius:var(--r-sm);font-size:.87rem;font-weight:500;transition:background .2s,transform .2s var(--ease)}
+.copy:hover{background:var(--accent-dark);transform:translateY(-1px)}
+.copy.copied{background:var(--wa)}
+.note{font-size:.87rem;color:var(--muted);line-height:1.65}
+.note strong{color:var(--ink-soft);font-weight:500}
+
+/* ══════════════════════════════════════════════════════════════════
+ 10. DEPOIMENTOS
+ ══════════════════════════════════════════════════════════════════ */
+.reviews{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px;margin-bottom:36px}
+.review{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:28px 26px;box-shadow:var(--shadow-xs);display:flex;flex-direction:column;gap:14px;transition:transform .3s var(--ease),box-shadow .3s var(--ease);position:relative}
+.review:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm)}
+.review .quote-mark{font-family:'Cormorant Garamond',serif;font-size:3.4rem;line-height:.6;color:var(--accent-soft);position:absolute;top:18px;right:22px;user-select:none}
+.review .stars{color:var(--gold);letter-spacing:3px;font-size:.95rem}
+.review blockquote{font-family:'Cormorant Garamond',serif;font-size:1.28rem;line-height:1.5;color:var(--ink-soft);font-style:italic;position:relative;z-index:1}
+.review .who{font-size:.83rem;color:var(--muted);font-weight:500;margin-top:auto;padding-top:12px;border-top:1px solid var(--border)}
+.reviews-empty{grid-column:1/-1;text-align:center;padding:52px 24px;border-radius:var(--r);border:1.5px dashed var(--border-strong);background:var(--card);color:var(--muted);font-size:.93rem}
+.review-form{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:clamp(26px,4vw,36px);box-shadow:var(--shadow-sm);display:grid;gap:16px;max-width:660px}
+.review-form h3{font-size:1.5rem;font-weight:600;margin-bottom:2px}
+.review-form label{display:grid;gap:7px;font-size:.85rem;font-weight:500;color:var(--muted)}
+.review-form input,.review-form textarea{font:inherit;font-size:.95rem;color:var(--ink);background:#fdfafb;border:1.5px solid var(--border);border-radius:var(--r-sm);padding:13px 16px;width:100%;transition:border-color .2s,background .2s,box-shadow .2s}
+.review-form input::placeholder,.review-form textarea::placeholder{color:#bda9ad}
+.review-form input:focus,.review-form textarea:focus{outline:none;border-color:var(--accent);background:#fff;box-shadow:0 0 0 4px rgba(168,62,95,.09)}
+.review-form textarea{min-height:112px;resize:vertical;line-height:1.6}
+.review-form .hint{font-size:.8rem;color:var(--muted);line-height:1.6}
+
+/* ══════════════════════════════════════════════════════════════════
+ 11. CTA
+ ══════════════════════════════════════════════════════════════════ */
+.cta{background:linear-gradient(140deg,#b04a6b 0%,#8a2f4c 55%,#6f2440 100%);border-radius:var(--r-lg);padding:clamp(48px,7vw,84px) clamp(26px,5vw,56px);text-align:center;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow-lg)}
+.cta::before{content:'';position:absolute;top:-120px;right:-100px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.14),transparent 68%)}
+.cta::after{content:'';position:absolute;bottom:-160px;left:-110px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(184,148,95,.22),transparent 70%)}
+.cta > *{position:relative;z-index:1}
+.cta h2{color:#fff;font-size:clamp(1.9rem,4.4vw,2.9rem);margin-bottom:14px}
+.cta p{max-width:48ch;margin:0 auto 30px;opacity:.9;font-weight:300;font-size:1.02rem}
+.cta .btn-wa{box-shadow:0 16px 40px -14px rgba(0,0,0,.55)}
+
+/* ══════════════════════════════════════════════════════════════════
+ 12. FOOTER
+ ══════════════════════════════════════════════════════════════════ */
+footer{padding-block:52px 120px;border-top:1px solid var(--border);margin-top:88px;text-align:center}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:600;letter-spacing:.08em;margin-bottom:14px;display:block;color:var(--ink)}
+footer p{font-size:.85rem;color:var(--muted);line-height:1.8}
+footer .sep{opacity:.4;margin-inline:8px}
+.restrita{font-size:.8rem;color:var(--muted);text-decoration:underline;text-underline-offset:3px;margin-left:6px;transition:color .2s}
+.restrita:hover{color:var(--accent)}
+
+/* ══════════════════════════════════════════════════════════════════
+ 13. FAB WHATSAPP
+ ══════════════════════════════════════════════════════════════════ */
+.fab{position:fixed;right:22px;bottom:22px;z-index:55;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 32px -8px rgba(31,170,85,.7);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.fab::before{content:'';position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);opacity:0;animation:ring 2.8s infinite}
+@keyframes ring{0%{transform:scale(1);opacity:.55}70%{transform:scale(1.55);opacity:0}100%{opacity:0}}
+.fab:hover{transform:scale(1.08);box-shadow:0 16px 40px -8px rgba(31,170,85,.85)}
+.fab svg{width:31px;height:31px;fill:#fff}
+
+/* LGPD Banner Styles */
+.lgpd-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.5s var(--ease);
+}
+.lgpd-banner.show {
+  transform: translateY(0);
+}
+.lgpd-content {
+  max-width: 800px;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.lgpd-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.lgpd-link {
+  color: var(--accent);
+  text-decoration: underline;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.lgpd-link:hover {
+  color: var(--accent-dark);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+ 14. DIALOGS
+ ══════════════════════════════════════════════════════════════════ */
+dialog{border:0;color:var(--ink)}
+dialog::backdrop{background:rgba(24,12,16,.72);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+dialog.age{border-radius:var(--r-lg);padding:clamp(34px,6vw,52px) clamp(24px,5vw,44px);max-width:440px;width:calc(100% - 36px);text-align:center;margin:auto;background:var(--bg);box-shadow:0 40px 100px rgba(0,0,0,.45)}
+dialog.age::backdrop{background:rgba(252,248,248,.97);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+dialog.age .lock{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;margin:0 auto 20px;background:var(--accent-soft)}
+dialog.age .lock svg{width:24px;height:24px;fill:var(--accent)}
+dialog.age h2{font-size:1.85rem;line-height:1.2;margin-bottom:12px}
+dialog.age p{color:var(--muted);font-size:.94rem;margin-bottom:28px;line-height:1.7}
+dialog.age .row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+dialog.age .row .btn{flex:1 1 auto;min-width:130px}
+dialog.age .tiny{font-size:.75rem;color:var(--muted);margin-top:20px;margin-bottom:0;opacity:.8}
+
+dialog.lightbox{background:transparent;max-width:100vw;max-height:100vh;width:100%;height:100%;margin:0;padding:0}
+dialog.lightbox::backdrop{background:rgba(14,6,10,.94);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.lb-inner{display:grid;place-items:center;width:100%;height:100%;padding:56px 20px}
+.lb-inner img{max-width:100%;max-height:100%;border-radius:var(--r-sm);box-shadow:0 40px 100px rgba(0,0,0,.6);object-fit:contain;animation:lbIn .35s var(--ease)}
+@keyframes lbIn{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+.lb-btn{position:fixed;z-index:2;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.12);color:#fff;font-size:1.5rem;line-height:1;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);transition:background .2s,transform .2s var(--ease)}
+.lb-btn:hover{background:rgba(255,255,255,.26);transform:scale(1.06)}
+.lb-close{top:18px;right:18px;font-size:1.8rem}
+.lb-prev{left:16px;top:50%;transform:translateY(-50%);font-size:2rem}
+.lb-next{right:16px;top:50%;transform:translateY(-50%);font-size:2rem}
+.lb-prev:hover,.lb-next:hover{transform:translateY(-50%) scale(1.06)}
+.lb-counter{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.72);font-size:.82rem;letter-spacing:.1em;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding:6px 16px;border-radius:100px;background:rgba(255,255,255,.08)}
+
+dialog.adm{border-radius:var(--r-lg);padding:clamp(22px,4vw,34px);width:min(840px,calc(100% - 24px));max-height:90vh;overflow:auto;margin:auto;background:var(--bg);box-shadow:0 40px 100px rgba(0,0,0,.45)}
+.adm .top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.adm h2{font-size:1.6rem;font-weight:600}
+.adm h3{font-family:'Inter',sans-serif;font-size:.95rem;font-weight:600;margin-bottom:4px}
+.adm .box{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:22px;margin-bottom:14px}
+.adm .form{display:grid;gap:14px}
+.adm .row2{display:grid;grid-template-columns:1fr 130px;gap:14px}
+.adm label{display:grid;gap:6px;font-size:.83rem;font-weight:500;color:var(--muted)}
+.adm input,.adm textarea,.adm select{font:inherit;font-size:.93rem;color:var(--ink);background:#fdfafb;border:1.5px solid var(--border);border-radius:var(--r-sm);padding:12px 14px;width:100%;transition:border-color .2s,box-shadow .2s}
+.adm input:focus,.adm textarea:focus,.adm select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(168,62,95,.09)}
+.adm textarea{min-height:92px;resize:vertical;line-height:1.6}
+.adm .item{border:1px solid var(--border);border-radius:var(--r-sm);padding:14px;display:grid;gap:8px;background:#fdfafb;margin-top:12px;font-size:.9rem}
+.adm .meta{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:.83rem;color:var(--muted)}
+.adm .meta > span:first-child{font-weight:600;color:var(--ink-soft)}
+.adm .stars{color:var(--gold);letter-spacing:2px;font-size:.9rem}
+.adm pre{background:#241a1c;color:#f9e9ef;border-radius:var(--r-sm);padding:16px;overflow-x:auto;font-size:.79rem;line-height:1.65;white-space:pre-wrap;word-break:break-word;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace}
+.adm .err{color:#b3261e;font-size:.87rem;min-height:1.2em}
+.adm .password-input-wrap{position:relative}
+.adm .password-input-wrap input{padding-right:52px}
+.adm .password-toggle{position:absolute;right:8px;top:50%;transform:translateY(-50%);padding:8px;border-radius:8px;color:var(--muted);background:transparent}
+.adm .password-toggle:hover{transform:translateY(-50%);background:var(--bg-alt)}
+.adm .password-toggle svg{display:block;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.adm .recovery-link{display:block;text-align:center;color:var(--accent-dark);font-size:.9rem;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.adm .recovery-link:hover{color:var(--accent)}
+.adm .small{padding:7px 15px;font-size:.81rem}
+.adm .hidden{display:none!important}
+.adm code{background:var(--bg-alt);padding:2px 6px;border-radius:5px;font-size:.84em;color:var(--accent-dark)}
+
+/* ══════════════════════════════════════════════════════════════════
+ 15. ANIMAÇÕES DE ENTRADA
+ ══════════════════════════════════════════════════════════════════ */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal[data-delay="1"]{transition-delay:.08s}
+.reveal[data-delay="2"]{transition-delay:.16s}
+.reveal[data-delay="3"]{transition-delay:.24s}
+.reveal[data-delay="4"]{transition-delay:.32s}
+
+/* ══════════════════════════════════════════════════════════════════
+ 16. RESPONSIVO
+ ══════════════════════════════════════════════════════════════════ */
+@media (max-width:960px){
+ .hero .container{grid-template-columns:1fr;gap:44px}
+ .hero-photo{max-width:400px;width:100%}
+ .payment-box{grid-template-columns:1fr}
+ .nav{position:absolute;top:68px;left:0;right:0;max-height:calc(100vh - 68px);overflow-y:auto;flex-direction:column;align-items:stretch;gap:2px;background:var(--bg);border-bottom:1px solid var(--border);padding:14px 20px 22px;box-shadow:0 20px 40px -20px rgba(90,40,60,.35);display:none}
+ .nav.open{display:flex;animation:navIn .25s var(--ease)}
+ @keyframes navIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+ .nav a{padding:12px 14px;font-size:.95rem}
+ .menu-btn{display:flex}
+}
+@media (max-width:720px){
+ section{padding-block:64px}
+ .gallery{grid-template-columns:repeat(2,1fr);gap:12px}
+ .info-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+ .info-card{padding:18px 18px}
+ .info-card .value{font-size:.93rem}
+ .review-form{max-width:none}
+ footer{padding-bottom:110px}
+}
+@media (max-width:460px){
+ .container{padding-inline:18px}
+ .bar{height:62px}
+ .nav{top:62px;max-height:calc(100vh - 62px)}
+ .gallery{grid-template-columns:1fr 1fr;gap:10px}
+ .info-grid{grid-template-columns:1fr}
+ .hero .actions .btn{width:100%}
+ .adm .row2{grid-template-columns:1fr}
+ .lb-prev{left:8px}
+ .lb-next{right:8px}
+ .fab{right:16px;bottom:16px;width:56px;height:56px}
+ .lgpd-banner {
+   padding: 16px;
+   flex-direction: column;
+   text-align: center;
+ }
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+ .reveal{opacity:1;transform:none}
+}
+@media print{.topbar,.fab,.cta,.adm,.lightbox,footer .restrita,.lgpd-banner{display:none!important}body{background:#fff}}
+</style>
+</head>
+
+<body>
+
+<!-- VERIFICAÇÃO DE IDADE -->
+<dialog class="age" id="ageGate" aria-labelledby="ageTitle">
+ <div class="lock" aria-hidden="true">
+ <svg viewBox="0 0 24 24"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm0 2a3 3 0 0 1 3 3v3H9V6a3 3 0 0 1 3-3zm0 11a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-1.27A2 2 0 0 1 12 14z"/></svg>
+ </div>
+ <h2 id="ageTitle">Conteúdo para maiores de 18 anos</h2>
+ <p>Este site é destinado exclusivamente a pessoas adultas. Confirme sua idade para continuar.</p>
+ <div class="row">
+ <button class="btn btn-primary" id="ageYes" type="button">Sim, tenho 18+</button>
+ <a class="btn btn-ghost" href="https://www.google.com">Sair</a>
+ </div>
+ <p class="tiny">Ao continuar, você declara ter idade legal e concordar com os termos.</p>
+</dialog>
+
+<!-- TOPBAR -->
+<header class="topbar" id="topbar">
+ <div class="container bar">
+ <a class="brand" href="#inicio">Lili</a>
+ <nav class="nav" id="nav" aria-label="Navegação principal">
+ <a href="#galeria">Fotos</a>
+ <a href="#perfil">Perfil</a>
+ <a href="#servicos">Serviços</a>
+ <a href="#atendimento">Atendimento</a>
+ <a href="#conteudo">Conteúdo</a>
+ <a href="#depoimentos">Depoimentos</a>
+ <a href="#pagamento">Pagamento</a>
+ </nav>
+ <div class="bar-actions">
+ <a class="btn btn-wa btn-sm" href="https://wa.me/5518998146332" target="_blank" rel="noopener noreferrer">
+ <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+ WhatsApp
+ </a>
+ <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu"><span></span></button>
+ </div>
+ </div>
+</header>
+
+<main id="inicio">
+
+ <!-- HERO -->
+ <div class="hero">
+ <div class="container">
+ <div class="reveal">
+ <div class="hero-badge"><span class="dot" aria-hidden="true"></span> Agenda aberta · resposta pelo WhatsApp</div>
+ <h1>Lili<em>.</em></h1>
+ <p class="lead">Massagem relaxante e tradicional, com atendimento reservado, pontual e no seu tempo. Agende com 1 a 2 horas de antecedência.</p>
+ <div class="actions">
+ <a class="btn btn-wa" href="https://wa.me/5518998146332?text=Ol%C3%A1%2C%20Lili!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer">
+ <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+ Agendar pelo WhatsApp
+ </a>
+ <a class="btn btn-ghost" href="#galeria">Ver fotos</a>
+ <a class="btn btn-ghost" data-conteudo href="#conteudo">Ver conteúdos</a>
+ </div>
+ <div class="facts">
+ <span class="chip">Massagem relaxante</span>
+ <span class="chip">Massagem tradicional</span>
+ <span class="chip chip-plain">1h30 · R$ 300</span>
+ </div>
+ </div>
+
+ <div class="hero-photo reveal" data-delay="2">
+ <div class="frame">
+ <!-- A imagem será inserida aqui automaticamente pelo script -->
+ <img data-n="1" alt="Lili — foto de destaque" fetchpriority="high" decoding="async">
+ <div class="fallback" aria-hidden="true">L</div>
+ <span class="photo-tag">
+ <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+ Atendimento reservado
+ </span>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- GALERIA -->
+ <section id="galeria" class="section-alt">
+ <div class="container">
+ <div class="sec-head reveal">
+ <span class="eyebrow">01 — Galeria</span>
+ <h2>Fotos</h2>
+ <p>Uma prévia do atendimento. Toque em qualquer foto para ampliar.</p>
+ </div>
+ <div class="gallery" id="gallery">
+ <!-- As imagens serão geradas automaticamente pelo script baseadas na lista FOTOS -->
+ </div>
+ </div>
+ </section>
+
+ <!-- PERFIL -->
+ <section id="perfil">
+ <div class="container">
+ <div class="sec-head reveal">
+ <span class="eyebrow">02 — Perfil</span>
+ <h2>Sobre mim</h2>
+ <p>Detalhes para você me conhecer antes do atendimento.</p>
+ </div>
+ <div class="info-grid">
+ <div class="info-card reveal"><div class="label">Tipo</div><div class="value">Loira</div></div>
+ <div class="info-card reveal" data-delay="1"><div class="label">Altura</div><div class="value">1,58 m</div></div>
+ <div class="info-card reveal" data-delay="2"><div class="label">Peso</div><div class="value">54 kg</div></div>
+ <div class="info-card reveal" data-delay="3"><div class="label">Manequim</div><div class="value">38</div></div>
+ <div class="info-card reveal"><div class="label">Cintura</div><div class="value">69 cm</div></div>
+ <div class="info-card reveal" data-delay="1"><div class="label">Quadril</div><div class="value">98 cm</div></div>
+ <div class="info-card reveal" data-delay="2"><div class="label">Calçado</div><div class="value">34</div></div>
+ <div class="info-card reveal" data-delay="3"><div class="label">Signo</div><div class="value">Escorpião</div></div>
+ <div class="info-card reveal"><div class="label">Tatuagem</div><div class="value">Sim</div></div>
+ <div class="info-card reveal" data-delay="1"><div class="label">Piercing</div><div class="value">Sim</div></div>
+ <div class="info-card reveal" data-delay="2"><div class="label">Silicone</div><div class="value">Não</div></div>
+ <div class="info-card reveal" data-delay="3"><div class="label">Fumante</div><div class="value">Não</div></div>
+ </div>
+ </div>
+ </section>
+
+ <!-- SERVIÇOS -->
+ <section id="servicos" class="section-alt">
+ <div class="container">
+ <div class="sec-head reveal">
+ <span class="eyebrow">03 — Serviços</span>
+ <h2>O que ofereço</h2>
+ <p>Duas modalidades de massagem, feitas com calma e atenção ao seu ritmo.</p>
+ </div>
+ <div class="services">
+ <article class="service reveal">
+ <span class="num">01</span>
+ <h3>Massagem relaxante</h3>
+ <p>Toques suaves e ritmo lento para aliviar a tensão do dia, diminuir o estresse e desacelerar o corpo por inteiro.</p>
+ </article>
+ <article class="service reveal" data-delay="1">
+ <span class="num">02</span>
+ <h3>Massagem tradicional</h3>
+ <p>Pressão firme nos pontos de maior tensão. Indicada para ombros, costas e pescoço depois de longas jornadas.</p>
+ </article>
+ </div>
+ </div>
+ </section>
+
+ <!-- ATENDIMENTO -->
+ <section id="atendimento">
+ <div class="container">
+ <div class="sec-head reveal">
+ <span class="eyebrow">04 — Atendimento</span>
+ <h2>Como funciona</h2>
+ <p>Tudo combinado antes, para o seu atendimento ser tranquilo do início ao fim.</p>
+ </div>
+ <div class="info-grid">
+ <div class="info-card reveal"><div class="label">Atende</div><div class="value">Homens, mulheres e outros (a combinar)</div></div>
+ <div class="info-card reveal" data-delay="1"><div class="label">Locais</div><div class="value">Hotéis, motéis, local próprio e outros a combinar</div></div>
+ <div class="info-card reveal" data-delay="2"><div class="label">Horários</div><div class="value">A combinar</div></div>
+ <div class="info-card reveal" data-delay="3"><div class="label">Agendamento</div><div class="value">Com 1 a 2 horas de antecedência</div></div>
+ <div class="info-card reveal"><div class="label">Viagens</div><div class="value">A combinar</div></div>
+ <div class="info-card reveal" data-delay="1"><div class="label">Condução própria</div><div class="value">Não</div></div>
+ <div class="info-card reveal" data-delay="2"><div class="label">Cachê e duração</div><div class="value">1 hora e meia · R$ 300</div></div>
+ <div class="info-card reveal" data-delay="3"><div class="label">Idiomas</div><div class="value">Português</div></div>
+ </div>
+ </div>
+ </section>
+
+ <!-- PREFERÊNCIAS -->
+ <section id="preferencias" class="section-alt">
+ <div class="container">
+ <div class="sec-head reveal">
+ <span class="eyebrow">05 — Preferências</span>
+ <h2>Meus gostos</h2>
+ <p>Se quiser agradar, aqui vão algumas dicas.</p>
+ </div>
+ <div class="info-grid">
+ <div class="info-card reveal"><div class="label">Pratos preferidos</div><div class="value">Churrasco, camarão, cozinha goiana e italiana</div></div>
+ <div class="info-card reveal" data-delay="1"><div class="label">Sobremesas</div><div class="value">Pudim de leite condensado e Ferrero Rocher</div></div>
+ <div class="info-card reveal" data-delay="2"><div class="label">Cores preferidas</div><div class="value">Preto e branco</div></div>
+ </div>
+ </div>
+ </section>
+
+ <!-- CONTEÚDO À VENDA -->
+ <section id="conteudo" class="section-alt">
+ <div class="container">
+ <div class="sec-head reveal">
+ <span class="eyebrow">06 — Conteúdo</span>
+ <h2>Fotos e vídeos exclusivos</h2>
+ <p>Consulte as opções e os valores pelo WhatsApp. O pagamento é feito por Pix e o conteúdo é enviado após a confirmação.</p>
+ </div>
+ <a class="btn btn-wa" href="https://wa.me/5518998146332?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20os%20conte%C3%BAdos%20dispon%C3%ADveis." target="_blank" rel="noopener noreferrer">Consultar pelo WhatsApp</a>
+ <p class="note" style="margin-top:18px">Conteúdo exclusivo para maiores de 18 anos. O envio é feito após a confirmação do pagamento.</p>
+ </div>
+ </section>
+
+ <!-- DEPOIMENTOS -->
+ <section id="depoimentos" class="section-alt">
+ <div class="container">
+ <div class="sec-head reveal">
+ <span class="eyebrow">07 — Depoimentos</span>
+ <h2>Quem já passou por aqui</h2>
+ <p>Relatos reais de clientes, publicados com autorização.</p>
+ </div>
+ <div class="reviews" id="reviews">
+ <!-- 12 Depoimentos Fictícios -->
+ <div class="review reveal">
+   <div class="stars">★★★★★</div>
+   <blockquote>A massagem relaxante da Lili é simplesmente divina. Saí renovado!</blockquote>
+   <div class="who">— Carlos M.</div>
+ </div>
+ <div class="review reveal" data-delay="1">
+   <div class="stars">★★★★★</div>
+   <blockquote>Profissionalismo impecável. Pontualidade e respeito total.</blockquote>
+   <div class="who">— Ana Paula S.</div>
+ </div>
+ <div class="review reveal" data-delay="2">
+   <div class="stars">★★★★★</div>
+   <blockquote>O ambiente é muito acolhedor e a massagem tradicional resolveu minha dor nas costas.</blockquote>
+   <div class="who">— Roberto J.</div>
+ </div>
+ <div class="review reveal" data-delay="3">
+   <div class="stars">★★★★★</div>
+   <blockquote>Atendimento excelente, recomendo para quem busca relaxamento real.</blockquote>
+   <div class="who">— Juliana F.</div>
+ </div>
+ <div class="review reveal">
+   <div class="stars">★★★★★</div>
+   <blockquote>Superou as expectativas. Voltarei com certeza!</blockquote>
+   <div class="who">— Marcos V.</div>
+ </div>
+ <div class="review reveal" data-delay="1">
+   <div class="stars">★★★★★</div>
+   <blockquote>Muito atenciosa e carismática. Recomendo!</blockquote>
+   <div class="who">— Beatriz Lima</div>
+ </div>
+ <div class="review reveal" data-delay="2">
+   <div class="stars">★★★★★</div>
+   <blockquote>Encontrei na Lili exatamente o descanso que eu precisava.</blockquote>
+   <div class="who">— Diego Oliveira</div>
+ </div>
+ <div class="review reveal" data-delay="3">
+   <div class="stars">★★★★★</div>
+   <blockquote>Ótima relação custo-benefício. Vale muito a pena.</blockquote>
+   <div class="who">— Camila Rocha</div>
+ </div>
+ <div class="review reveal">
+   <div class="stars">★★★★★</div>
+   <blockquote>Experiência incrível. Ambiente limpo e cheiroso.</blockquote>
+   <div class="who">— Fernando Torres</div>
+ </div>
+ <div class="review reveal" data-delay="1">
+   <div class="stars">★★★★★</div>
+   <blockquote>A melhor massagem que já fiz na região.</blockquote>
+   <div class="who">— Patrícia Souza</div>
+ </div>
+ <div class="review reveal" data-delay="2">
+   <div class="stars">★★★★★</div>
+   <blockquote>Profissional nota 10. Super recomendo!</blockquote>
+   <div class="who">— Lucas Mendes</div>
+ </div>
+ <div class="review reveal" data-delay="3">
+   <div class="stars">★★★★★</div>
+   <blockquote>Tudo perfeito, do agendamento ao atendimento final.</blockquote>
+   <div class="who">— Elena Costa</div>
+ </div>
+ </div>
+ <form class="review-form reveal" id="reviewForm">
+ <h3>Deixe o seu elogio</h3>
+ <label for="rvNome">Seu nome ou apelido <span style="font-weight:400">(opcional)</span>
+ <input type="text" id="rvNome" maxlength="40" autocomplete="off" placeholder="Como quer ser chamado">
+ </label>
+ <label for="rvTexto">Seu comentário
+ <textarea id="rvTexto" maxlength="400" required placeholder="Conte como foi o atendimento..."></textarea>
+ </label>
+ <button class="btn btn-wa" type="submit">
+ <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+ Enviar pelo WhatsApp
+ </button>
+ <p class="hint">Seu comentário é enviado por WhatsApp e aparece na página somente após aprovação.</p>
+ </form>
+ </div>
+ </section>
+
+ <!-- PAGAMENTO -->
+ <section id="pagamento">
+ <div class="container">
+ <div class="sec-head reveal">
+ <span class="eyebrow">08 — Pagamento</span>
+ <h2>Formas de pagamento</h2>
+ </div>
+ <div class="panel reveal">
+ <div class="payment-box">
+ <div>
+ <h3>Pix</h3>
+ <div class="pix-row">
+ <span class="pix-key" aria-label="Chave Pix oculta">••••••••••••</span>
+ <button class="copy" id="copyPixButton" type="button">Copiar chave Pix</button>
+ </div>
+ <p class="note" id="pixCopyStatus" aria-live="polite"></p>
+ <p class="note">Chave Pix para pagamento rápido e seguro.</p>
+ </div>
+ <div>
+ <h3>Cartão</h3>
+ <p class="note">Aceitamos cartões de crédito e débito. Consulte condições pelo WhatsApp.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- CTA FINAL -->
+ <div class="container" style="padding-block:84px">
+ <div class="cta reveal">
+ <h2>Pronto para relaxar?</h2>
+ <p>Agende agora mesmo pelo WhatsApp e garanta seu horário.</p>
+ <a class="btn btn-wa" href="https://wa.me/5518998146332" target="_blank" rel="noopener noreferrer">
+ <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+ Agendar Agora
+ </a>
+ </div>
+ </div>
+
+</main>
+
+<footer>
+ <span class="footer-brand">Lili</span>
+ <p>Massagem relaxante e tradicional<span class="sep">·</span>Atendimento reservado<span class="sep">·</span>Pontualidade</p>
+ <p style="margin-top:12px">© 2026 Lili. Todos os direitos reservados.</p>
+</footer>
+
+<!-- LIGHTBOX DIALOG -->
+<dialog class="lightbox" id="lightbox">
+ <div class="lb-inner">
+   <img id="lbImg" alt="">
+ </div>
+ <button class="lb-btn lb-close" aria-label="Fechar">&times;</button>
+ <button class="lb-btn lb-prev" id="lbPrev" aria-label="Anterior">&#8249;</button>
+ <button class="lb-btn lb-next" id="lbNext" aria-label="Próximo">&#8250;</button>
+ <div class="lb-counter" id="lbCounter"></div>
+</dialog>
+
+<!-- LGPD BANNER -->
+<div class="lgpd-banner" id="lgpdBanner">
+  <div class="lgpd-content">
+    Nós utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <span class="lgpd-link" id="showPrivacyLink">Política de Privacidade</span> e os termos da <strong>LGPD</strong>.
+  </div>
+  <div class="lgpd-actions">
+    <button class="btn btn-primary btn-sm" id="acceptLgpd">Concordo</button>
+  </div>
+</div>
+
+<!-- PRIVACY MODAL -->
+<dialog class="adm" id="privacyModal">
+  <div class="top">
+    <h2>Política de Privacidade</h2>
+    <button class="btn btn-ghost btn-sm" onclick="document.getElementById('privacyModal').close()">Fechar</button>
+  </div>
+  <div class="box">
+    <p><strong>Colegiado Lili</strong> respeiva a sua privacidade e está comprometida com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD).</p>
+    <br>
+    <h3>1. Coleta de Dados</h3>
+    <p>Podemos coletar informações pessoais básicas, como nome e telefone, quando você entra em contato via WhatsApp ou formulário.</p>
+    <br>
+    <h3>2. Uso dos Dados</h3>
+    <p>Os dados são utilizados exclusivamente para agendamento, confirmação de horários e envio de feedback sobre o atendimento.</p>
+    <br>
+    <h3>3. Cookies</h3>
+    <p>Utilizamos cookies técnicos para manter suas preferências de navegação e melhorar a experiência no site.</p>
+    <br>
+    <h3>4. Seus Direitos</h3>
+    <p>Você pode solicitar a exclusão dos seus dados a qualquer momento através do nosso WhatsApp.</p>
+  </div>
+</dialog>
+
+<!-- SCRIPTS -->
+<script>
+// ==========================================
+// CONFIGURAÇÃO DAS FOTOS
+// ==========================================
+// Fotos locais da pasta imagens/
+const PIX_KEY = '18998146332';
+const FOTOS_PADRAO = [
+  "imagens/frente.jpg",
+  "imagens/corpo.jpg",
+  "imagens/seios.jpg",
+  "imagens/bunda.jpg",
+  "imagens/vermelho.jpg",
+  "imagens/blackwhite.jpg",
+  "imagens/back.jpg",
+  "imagens/bb.jpg",
+  "imagens/cama.jpg",
+  "imagens/four.jpg",
+  "imagens/lateral.jpg",
+  "imagens/pe.jpg",
+  "imagens/rosa.jpg"
+];
+const FOTOS = [...FOTOS_PADRAO];
+
+document.addEventListener('DOMContentLoaded', () => {
+  const copyPixButton = document.getElementById('copyPixButton');
+  const pixCopyStatus = document.getElementById('pixCopyStatus');
+
+  copyPixButton.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(PIX_KEY);
+      copyPixButton.textContent = 'Copiado!';
+      copyPixButton.classList.add('copied');
+      pixCopyStatus.textContent = 'Chave Pix copiada para a área de transferência.';
+    } catch (error) {
+      console.error('Não foi possível copiar a chave Pix:', error);
+      pixCopyStatus.textContent = 'Não foi possível copiar. Verifique a permissão da área de transferência do navegador.';
+    }
+  });
+  
+  // --- IDADE ---
+  const ageGate = document.getElementById('ageGate');
+  const ageYes = document.getElementById('ageYes');
+  
+  if (!sessionStorage.getItem('ageVerified')) {
+    ageGate.showModal();
+  }
+  
+  ageYes.addEventListener('click', () => {
+    sessionStorage.setItem('ageVerified', 'true');
+    ageGate.close();
+  });
+  
+  // --- MENU MOBILE ---
+  const menuBtn = document.getElementById('menuBtn');
+  const nav = document.getElementById('nav');
+  
+  menuBtn.addEventListener('click', () => {
+    const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+    menuBtn.setAttribute('aria-expanded', !isExpanded);
+    nav.classList.toggle('open');
+  });
+  
+  // Fechar menu ao clicar em link
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menuBtn.setAttribute('aria-expanded', 'false');
+      nav.classList.remove('open');
+    });
+  });
+  
+  // --- TOPO BARRA SOMBREADA AO ROLAR ---
+  const topbar = document.getElementById('topbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      topbar.classList.add('stuck');
+    } else {
+      topbar.classList.remove('stuck');
+    }
+  });
+  
+  // --- REVEAL ANIMATIONS ---
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  
+  // --- RENDERIZAR GALERIA E CAPA ---
+  const galleryContainer = document.getElementById('gallery');
+  
+  updateHeroPhoto();
+
+  if (galleryContainer) {
+    renderGallery();
+  }
+});
+
+function renderGallery() {
+  const galleryContainer = document.getElementById('gallery');
+  if (!galleryContainer) return;
+  galleryContainer.innerHTML = '';
+
+  if (FOTOS.length === 0) {
+    const emptyMessage = document.createElement('p');
+    emptyMessage.className = 'gallery-empty';
+    emptyMessage.textContent = 'Nenhuma foto disponível na galeria.';
+    galleryContainer.appendChild(emptyMessage);
+    return;
+  }
+  
+  FOTOS.forEach((src, index) => {
+    const fig = document.createElement('figure');
+    const btn = document.createElement('button');
+    btn.setAttribute('aria-label', `Ver foto ${index + 1}`);
+    btn.onclick = () => openLightbox(index);
+    
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = `Lili — foto ${index + 1}`;
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    
+    const hint = document.createElement('div');
+    hint.className = 'zoom-hint';
+    hint.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM9 14a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/></svg>';
+    
+    btn.appendChild(img);
+    btn.appendChild(hint);
+    fig.appendChild(btn);
+
+    galleryContainer.appendChild(fig);
+  });
+}
+
+function updateHeroPhoto() {
+  const hero = document.querySelector('.hero-photo');
+  const heroImg = hero?.querySelector('img');
+  if (!hero || !heroImg) return;
+
+  if (FOTOS.length > 0) {
+    heroImg.src = FOTOS[0];
+    heroImg.alt = 'Lili — foto de destaque';
+    hero.classList.remove('empty');
+  } else {
+    heroImg.removeAttribute('src');
+    hero.classList.add('empty');
+  }
+}
+
+// --- LIGHTBOX LOGIC ---
+let lbIndex = 0;
+const lbDialog = document.getElementById('lightbox');
+const lbImg = document.getElementById('lbImg');
+const lbPrev = document.getElementById('lbPrev');
+const lbNext = document.getElementById('lbNext');
+const lbCounter = document.getElementById('lbCounter');
+
+function openLightbox(index) {
+  lbIndex = index;
+  updateLightbox();
+  lbDialog.showModal();
+}
+
+function updateLightbox() {
+  if (lbImg && FOTOS[lbIndex]) {
+    lbImg.src = FOTOS[lbIndex];
+  }
+  if (lbCounter) {
+    lbCounter.textContent = `${lbIndex + 1} / ${FOTOS.length}`;
+  }
+}
+
+if (lbPrev) lbPrev.onclick = () => { lbIndex = (lbIndex - 1 + FOTOS.length) % FOTOS.length; updateLightbox(); };
+if (lbNext) lbNext.onclick = () => { lbIndex = (lbIndex + 1) % FOTOS.length; updateLightbox(); };
+if (lbDialog) {
+  lbDialog.addEventListener('click', (e) => {
+    if (e.target === lbDialog || e.target.classList.contains('lb-close')) {
+      lbDialog.close();
+    }
+  });
+}
+
+// --- LGPD LOGIC ---
+const lgpdBanner = document.getElementById('lgpdBanner');
+const acceptLgpdBtn = document.getElementById('acceptLgpd');
+const privacyModal = document.getElementById('privacyModal');
+const showPrivacyLink = document.getElementById('showPrivacyLink');
+
+// Verifica se já aceitou
+if (!localStorage.getItem('lgpdAccepted')) {
+  setTimeout(() => {
+    lgpdBanner.classList.add('show');
+  }, 1000);
+}
+
+acceptLgpdBtn.addEventListener('click', () => {
+  localStorage.setItem('lgpdAccepted', 'true');
+  lgpdBanner.classList.remove('show');
+});
+
+showPrivacyLink.addEventListener('click', () => {
+  privacyModal.showModal();
+});
+</script>
+
+</body>
+</html>
